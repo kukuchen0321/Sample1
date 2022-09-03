@@ -17,4 +17,11 @@ public class VisaCard extends CreditCard{
         return false;
     }
 
+    public static void main(String[] args) {
+        CreditCard chase = new VisaCard("Momo","10020003",20.0);
+        chase.payBills(80.0);
+        refund(100);
+        System.out.println(chase.accountBalance);
+    }
+
 }
